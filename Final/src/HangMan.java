@@ -5,10 +5,11 @@ public class HangMan
 		{
 		Welcome.greet();
 		Hanger.hanger();
-		PickWord.word();
-		
+		PickWord.pickingWord();
+		System.out.print(PickWord.theWord);
 		PersonsPick.personsPick();
 		HangingMan.stepsToHang();
+			
 		}
 	}
 

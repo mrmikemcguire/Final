@@ -1,73 +1,33 @@
 
 public class PickWord 
 	{
+	static String theWord[] = new String [8];
+	//static String  theWord[] = {"_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ "};
 	static String pickedWord;
-	static String [] theWord;
 	public static void word()
 		{
 		pickingWord();
 		}
-	public static String[] pickingWord()
+	public static void pickingWord()
 		{
-
-		String[] word = {"blueberry ","muffins", "America", "mullen", "football", "cinderela" };
+		for(int i =0; i < theWord.length; i++)
+		{
+			theWord[i] = "_ ";
+		}
+		String word[] = {"aardvark ", "football", "earthily", "feminist ", "firebird" ,"scorpion"};
 		int randomWord = (int)(Math.random()*6);
 		pickedWord = word[randomWord];
-		if(randomWord == 0)
-			{
-			String theWord[]= {"_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ "};
-			for(int i =0; i < theWord.length; i++)
+		
+			//[]theWord= {"_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ "};
+//	
+			//for (String s : theWord)
+				//System.out.println(s);
+			for(int i =0; i < pickedWord.length(); i++)
 				{
 				System.out.print(theWord[i]);
 				}
-			return theWord;
-			
+		
+	 
 			}
-		if(randomWord == 1)
-			{
-			String theWord[]= {"_ ","_ ","_ ","_ ","_ ","_ ","_ "};
-			for(int i =0; i < theWord.length; i++)
-				{
-				System.out.print(theWord[i]);
-				}
-			return theWord;
-			}
-		if(randomWord == 2)
-			{
-			String theWord[]= {"_ ","_ ","_ ","_ ","_ ","_ ","_ "};
-			for(int i =0; i < theWord.length; i++)
-				{
-				System.out.print(theWord[i]);
-				}
-			return theWord;
-			}
-		if(randomWord == 3)
-			{
-			String theWord[]= {"_ ","_ ","_ ","_ ","_ ","_ "};
-			for(int i =0; i < theWord.length; i++)
-				{
-				System.out.print(theWord[i]);
-				}
-			return theWord;
-			}
-		if(randomWord == 4)
-			{
-			String theWord[]= {"_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ "};
-			for(int i =0; i < theWord.length; i++)
-				{
-				System.out.print(theWord[i]);
-				}
-			return theWord;
-			}
-		if(randomWord == 5)
-			{
-			String theWord[]= {"_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ ","_ "};
-			for(int i =0; i < theWord.length; i++)
-				{
-				System.out.print(theWord[i]);
-				}
-			return theWord;
-			}
-		return theWord;
-		}
 	}
+	
